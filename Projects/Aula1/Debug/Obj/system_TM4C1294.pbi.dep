@@ -1,0 +1,10 @@
+system_TM4C1294.pbi: \
+  F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\Projects\Aula1\src\system_TM4C1294.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\Projects\Aula1\src/TM4C1294NCPDT.h \
+  F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\Projects\Aula1\src/system_TM4C1294.h

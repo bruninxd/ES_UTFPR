@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\Projects\Aula1_b\Aula1_b.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\Projects\simple_io_main_sp\simple_io_main_sp.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

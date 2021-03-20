@@ -1,0 +1,28 @@
+#Generating source browse information for project c_asm
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build c_code.pbi : index c_code.xcl
+build system_ARMCM4.pbi : index system_ARMCM4.xcl
+build c_asm.pbd : link c_code.pbi system_ARMCM4.pbi
+build c_asm.pbw : browsedata c_asm.pbd
+
+
