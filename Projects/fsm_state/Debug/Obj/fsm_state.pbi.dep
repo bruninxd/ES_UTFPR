@@ -1,0 +1,11 @@
+fsm_state.pbi: \
+  F:\00_Embedded_Systems\ES_UTFPR\Projects\fsm_state\..\drivers\driverleds.h \
+  F:\00_Embedded_Systems\ES_UTFPR\Projects\fsm_state\..\..\TivaWare_C_Series-2.1.4.178\driverlib\systick.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdbool.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  F:\00_Embedded_Systems\ES_UTFPR\Projects\fsm_state\src\fsm_state.c
