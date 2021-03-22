@@ -1,0 +1,30 @@
+#Generating source browse information for project fsm_matrix
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build driverbuttons.pbi : index driverbuttons.xcl
+build driverleds.pbi : index driverleds.xcl
+build fsm_matrix.pbi : index fsm_matrix.xcl
+build system_TM4C1294_TW.pbi : index system_TM4C1294_TW.xcl
+build fsm_matrix.pbd : link driverbuttons.pbi driverleds.pbi fsm_matrix.pbi system_TM4C1294_TW.pbi
+build fsm_matrix.pbw : browsedata fsm_matrix.pbd
+
+

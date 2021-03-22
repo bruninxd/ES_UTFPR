@@ -4,6 +4,9 @@
         <path>$WS_DIR$\Projects\Aula1_b\Aula1_b.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\Projects\fsm_matrix\fsm_matrix.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Projects\Aula3_FSM\fsm_state\fsm_state.ewp</path>
     </project>
     <project>
