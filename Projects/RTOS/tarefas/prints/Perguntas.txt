@@ -1,0 +1,58 @@
+2-
+
+//   <o>Kernel Tick Frequency [Hz] <1-1000000>
+//   <i> Defines base time unit for delays and timeouts.
+//   <i> Default: 1000 (1ms tick)
+#ifndef OS_TICK_FREQ
+#define OS_TICK_FREQ                1000
+#endif
+
+//     <o>Number of user Threads <1-1000>
+//     <i> Defines maximum number of user threads that can be active at the same time.
+//     <i> Applies to user threads with system provided memory for control blocks.
+#ifndef OS_THREAD_NUM
+#define OS_THREAD_NUM               6
+#endif
+
+//     <o>Number of user Threads with default Stack size <0-1000>
+//     <i> Defines maximum number of user threads with default stack size.
+//     <i> Applies to user threads with zero stack size specified.
+#ifndef OS_THREAD_DEF_STACK_NUM
+#define OS_THREAD_DEF_STACK_NUM     6
+#endif
+
+
+3 e 4- Os LEDs piscam mais lentos, cada task agora tem o dobro de tempo até o round-robin chamar a outra thread. Era 1ms, agora ficou em 2ms, como a quantidade de ticks em: é somente 5, significa que antes ficavam 5ms, agora ficam 10ms em cada thread antes de trocar de tarefa.
+
+//     <o>Round-Robin Timeout <1-1000>
+//     <i> Defines how many ticks a thread will execute before a thread switch.
+//     <i> Default: 5
+#ifndef OS_ROBIN_TIMEOUT
+#define OS_ROBIN_TIMEOUT            5
+#endif
+
+mas como podemos ver em cmsis_os2.h:
+o delay em OS_TICK_FREQ afeta o osDelay, um delay de 100, que seria 100ms, agora vira de 200ms com essa nova configuração
+
+//  ==== Generic Wait Functions ====
+ 
+/// Wait for Timeout (Time Delay).
+/// \param[in]     ticks         \ref CMSIS_RTOS_TimeOutValue "time ticks" value
+/// \return status code that indicates the execution status of the function.
+osStatus_t osDelay (uint32_t ticks);
+
+
+5-
+
+//  ==== Thread Management Functions ====
+ 
+/// Create a thread and add it to Active Threads.
+/// \param[in]     func          thread function.
+/// \param[in]     argument      pointer that is passed to the thread function as start argument.
+/// \param[in]     attr          thread attributes; NULL: default values.
+/// \return thread ID for reference by other functions or NULL in case of error.
+osThreadId_t osThreadNew (osThreadFunc_t func, void *argument, const osThreadAttr_t *attr);
+
+
+
+
