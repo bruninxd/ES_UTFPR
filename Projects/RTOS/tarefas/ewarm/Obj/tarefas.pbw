@@ -64340,7 +64340,7 @@
     "display": "thread1_id",
     "location": {
       "column": "14",
-      "line": "5",
+      "line": "8",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "thread1_id",
@@ -64354,10 +64354,96 @@
     "display": "thread2_id",
     "location": {
       "column": "26",
-      "line": "5",
+      "line": "8",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "thread2_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@thread3_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "thread3_id",
+    "location": {
+      "column": "38",
+      "line": "8",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "thread3_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@thread4_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "thread4_id",
+    "location": {
+      "column": "50",
+      "line": "8",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "thread4_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@LED_struct",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "10",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@LED_struct@FI@num_LED",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "num_LED",
+        "location": {
+          "column": "11",
+          "line": "11",
+          "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+        },
+        "name": "num_LED",
+        "origin": "project_file",
+        "scope": "_anonymous_tarefas_c_10_9"
+      },
+      {
+        "ID": "c:@SA@LED_struct@FI@time_LED",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "time_LED",
+        "location": {
+          "column": "12",
+          "line": "12",
+          "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+        },
+        "name": "time_LED",
+        "origin": "project_file",
+        "scope": "_anonymous_tarefas_c_10_9"
+      },
+      {
+        "ID": "c:@T@LED_struct",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct LED_struct",
+        "location": {
+          "column": "2",
+          "line": "13",
+          "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+        },
+        "name": "LED_struct",
+        "origin": "project_file",
+        "scope": "_anonymous_tarefas_c_10_9"
+      }
+    ],
+    "name": "",
     "origin": "project_file",
     "scope": null
   },
@@ -64368,7 +64454,7 @@
     "display": "void MyThread(void *)",
     "location": {
       "column": "6",
-      "line": "7",
+      "line": "15",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "MyThread",
@@ -64376,13 +64462,13 @@
     "scope": null
   },
   {
-    "ID": "c:tarefas.c@202@F@MyThread@state",
+    "ID": "c:tarefas.c@341@F@MyThread@state",
     "What": "Variable",
     "defdec": "Def",
     "display": "state",
     "location": {
       "column": "11",
-      "line": "10",
+      "line": "17",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "state",
@@ -64390,13 +64476,13 @@
     "scope": null
   },
   {
-    "ID": "c:tarefas.c@224@F@MyThread@tick",
+    "ID": "c:tarefas.c@363@F@MyThread@tick",
     "What": "Variable",
     "defdec": "Def",
     "display": "tick",
     "location": {
       "column": "12",
-      "line": "11",
+      "line": "18",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "tick",
@@ -64410,10 +64496,66 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "105",
+      "line": "31",
       "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
     },
     "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tarefas.c@684@F@main@LED_stru1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "LED_stru1",
+    "location": {
+      "column": "14",
+      "line": "35",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "LED_stru1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tarefas.c@684@F@main@LED_stru2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_stru2",
+    "location": {
+      "column": "25",
+      "line": "35",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "LED_stru2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tarefas.c@684@F@main@LED_stru3",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_stru3",
+    "location": {
+      "column": "36",
+      "line": "35",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "LED_stru3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tarefas.c@684@F@main@LED_stru4",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "LED_stru4",
+    "location": {
+      "column": "47",
+      "line": "35",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\tarefas\\src\\tarefas.c"
+    },
+    "name": "LED_stru4",
     "origin": "project_file",
     "scope": null
   }
