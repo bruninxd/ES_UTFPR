@@ -66,7 +66,7 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>8.30.1.17146</state>
+                    <state>8.50.9.33458</state>
                 </option>
                 <option>
                     <name>GeneralEnableMisra</name>
@@ -345,11 +345,13 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\..\drivers</state>
-                    <state>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178</state>
-                    <state>$PROJ_DIR$\..\..\CMSIS-5.6.0\CMSIS\Core\Include</state>
-                    <state>$PROJ_DIR$\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include</state>
-                    <state>$PROJ_DIR$\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\CMSIS-5.6.0</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\CMSIS-5.6.0\CMSIS\Core\Include</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\CMSIS-5.6.0\CMSIS\RTOS2\Include</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\Projects\drivers</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\Projects\Aula1\driverlib\ewarm\Exe</state>
+                    <state>F:\00_Embedded_Systems\ES_UTFPR\TivaWare_C_Series-2.1.4.178</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -1013,7 +1015,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>prodcons_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -1068,13 +1070,13 @@
         <name>$PROJ_DIR$\..\drivers\driverleds.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a</name>
+        <name>$PROJ_DIR$\..\..\Aula1\driverlib\ewarm\Exe\driverlib.a</name>
     </file>
     <file>
         <name>$PROJ_DIR$\src\prodcons.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Library\IAR\IDE\CM4F\Exe\RTX_CM.a</name>
+        <name>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Library\IAR\RTX_CM4F.a</name>
     </file>
     <file>
         <name>$PROJ_DIR$\src\RTX_Config.c</name>

@@ -1,3 +1,25 @@
+//ALUNO BRUNO SOARES DE SOUZA
+//1558781
+
+//Exercício 5:
+//  
+//  Tp = 500 ms e Tc = 1s
+//      LEDs ficam acesos 1 segundo de cada vez, na velocidade do consumidor, pois ele consome um de cada vez
+//          Consumidor tem que esperar o produtor liberar para ele consumir algo
+//              O que mesmo sendo feito em 500ms, o consumidor ainda tem que esperar ser liberado o buffer
+
+
+//  Tp = 2s , Tc = 250 ms
+//    LEDs mudam a cada 2 segundos, porque enquanto o produtor está com o semáforo,
+//          não há dados para serem consumidos, e o consumidor fica aguardando ser liberado
+//
+//  tp = 500 ms, tc = 500 ms
+//      LEDs mudam a cada meio segundo, cada item produzido é logo em seguida consumido
+
+// No geral nota-se a dependência entre os dois, para a garantia da exclusão mútua.
+
+
+
 #include "system_tm4c1294.h" // CMSIS-Core
 #include "driverleds.h" // device drivers
 #include "cmsis_os2.h" // CMSIS-RTOS
