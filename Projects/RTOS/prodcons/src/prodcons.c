@@ -1,5 +1,11 @@
-//ALUNO BRUNO SOARES DE SOUZA
-//1558781
+//****** Universidade Tecnológica Federal do Paraná - UTFPR     ******\\
+//****** Engenharia Eletrônica - DAELN                          ******\\
+//****** Sistemas embarcados - Professor: Hugo Vieira Neto      ******\\
+//****** Aluno: Bruno Soares de Souza 1558781                   ******\\
+// Prática 5:
+
+
+// Estou tendo problemas com o handler, vamos ver na aula
 
 //Exercício 5:
 //  
@@ -8,7 +14,7 @@
 //          Consumidor tem que esperar o produtor liberar para ele consumir algo
 //              O que mesmo sendo feito em 500ms, o consumidor ainda tem que esperar ser liberado o buffer
 
-
+// 1 e 2)
 //  Tp = 2s , Tc = 250 ms
 //    LEDs mudam a cada 2 segundos, porque enquanto o produtor está com o semáforo,
 //          não há dados para serem consumidos, e o consumidor fica aguardando ser liberado
@@ -18,11 +24,19 @@
 
 // No geral nota-se a dependência entre os dois, para a garantia da exclusão mútua.
 
+// 3)
+// Não há impacto entre duas tarefas, pois uma produz e a outra consome, e há exclusão mútua
+// Considerando também que todo o buffer é modificado por vez de acesso
 
 
 #include "system_tm4c1294.h" // CMSIS-Core
 #include "driverleds.h" // device drivers
 #include "cmsis_os2.h" // CMSIS-RTOS
+
+
+#include "driverbuttons.h" // Projects/drivers
+#include "driverleds.h"
+
 
 #define BUFFER_SIZE 8
 
@@ -30,28 +44,56 @@ osThreadId_t produtor_id, consumidor_id;
 osSemaphoreId_t vazio_id, cheio_id;
 uint8_t buffer[BUFFER_SIZE];
 
-void produtor(void *arg){
-  uint8_t index_i = 0, count = 0;
+    uint8_t index_i = 0, count = 0;
+
+
+void GPIOJ_Handler(void)
+{
   
-  while(1){
-    osSemaphoreAcquire(vazio_id, osWaitForever); // há espaço disponível?
+//    uint8_t index_i = 0, count = 0;
+
+    osSemaphoreAcquire(vazio_id, 0); //ISR, não pode travar o sistema
     buffer[index_i] = count; // coloca no buffer
     osSemaphoreRelease(cheio_id); // sinaliza um espaço a menos
     
     index_i++; // incrementa índice de colocação no buffer
     if(index_i >= BUFFER_SIZE)
+    {
       index_i = 0;
-    
+    }
+         
     count++;
     count &= 0x0F; // produz nova informação
-    osDelay(500);
-  } // while
-} // produtor
+
+//  Evento = Botao;
+} // GPIOJ_Handler
+
+//void produtor(void *arg){
+//  uint8_t index_i = 0, count = 0;
+//  
+//  while(1){
+//    osSemaphoreAcquire(vazio_id, osWaitForever); // há espaço disponível?
+//    buffer[index_i] = count; // coloca no buffer
+//    osSemaphoreRelease(cheio_id); // sinaliza um espaço a menos
+//    
+//    index_i++; // incrementa índice de colocação no buffer
+//    if(index_i >= BUFFER_SIZE)
+//      index_i = 0;
+//    
+//    count++;
+//    count &= 0x0F; // produz nova informação
+//    osDelay(500);
+//  } // while
+//} // produtor
 
 void consumidor(void *arg){
   uint8_t index_o = 0, state;
   
   while(1){
+    
+    
+        ButtonIntEnable(USW1);
+    
     osSemaphoreAcquire(cheio_id, osWaitForever); // há dado disponível?
     state = buffer[index_o]; // retira do buffer
     osSemaphoreRelease(vazio_id); // sinaliza um espaço a mais
@@ -62,20 +104,31 @@ void consumidor(void *arg){
     
     LEDWrite(LED4 | LED3 | LED2 | LED1, state); // apresenta informação consumida
     osDelay(500);
+    
+    //libera GPIO
+  ButtonIntEnable(USW1);
+
   } // while
 } // consumidor
 
 void main(void){
   SystemInit();
   LEDInit(LED4 | LED3 | LED2 | LED1);
+  
+  //botao
+  ButtonInit(USW1);
+
+
 
   osKernelInitialize();
 
-  produtor_id = osThreadNew(produtor, NULL, NULL);
+  //produtor_id = osThreadNew(produtor, NULL, NULL);
   consumidor_id = osThreadNew(consumidor, NULL, NULL);
 
   vazio_id = osSemaphoreNew(BUFFER_SIZE, BUFFER_SIZE, NULL); // espaços disponíveis = BUFFER_SIZE
   cheio_id = osSemaphoreNew(BUFFER_SIZE, 0, NULL); // espaços ocupados = 0
+  
+
   
   if(osKernelGetState() == osKernelReady)
     osKernelStart();

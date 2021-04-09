@@ -1,5 +1,5 @@
 simple_uart.pbi: \
-  F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\Projects\simple_uart\src\simple_uart.c \
+  F:\00_Embedded_Systems\ES_UTFPR\Projects\simple_uart\src\simple_uart.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
@@ -15,4 +15,4 @@ simple_uart.pbi: \
   F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib/pin_map.h \
   F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\utils/uartstdio.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdarg.h \
-  F:\Projetos_SE\Clone_Prof_aula1\EK-TM4C1294_IAR8\Projects\simple_uart\src/system_TM4C1294.h
+  F:\00_Embedded_Systems\ES_UTFPR\Projects\simple_uart\src/system_TM4C1294.h

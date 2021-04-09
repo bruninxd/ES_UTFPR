@@ -220,7 +220,7 @@
                 <debug>1</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state></state>
+                    <state>PART_TM4C1294NCPDT</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -1066,6 +1066,9 @@
             <data />
         </settings>
     </configuration>
+    <file>
+        <name>$PROJ_DIR$\..\..\drivers\driverbuttons.c</name>
+    </file>
     <file>
         <name>$PROJ_DIR$\..\drivers\driverleds.c</name>
     </file>

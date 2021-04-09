@@ -19,6 +19,9 @@
         <path>$WS_DIR$\Projects\simple_io_main_sp\simple_io_main_sp.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\Projects\simple_uart\simple_uart.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Projects\RTOS\tarefas\tarefas.ewp</path>
     </project>
     <batchBuild />
