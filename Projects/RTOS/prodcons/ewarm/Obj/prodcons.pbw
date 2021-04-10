@@ -18191,6 +18191,202 @@
     "scope": null
   },
   {
+    "ID": "c:prodcons.c@1486@macro@BUFFER_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUFFER_SIZE",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "BUFFER_SIZE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@produtor_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "produtor_id",
+    "location": {
+      "column": "14",
+      "line": "39",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "produtor_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@consumidor_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "consumidor_id",
+    "location": {
+      "column": "27",
+      "line": "39",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "consumidor_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@vazio_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "vazio_id",
+    "location": {
+      "column": "17",
+      "line": "40",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "vazio_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@cheio_id",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "cheio_id",
+    "location": {
+      "column": "27",
+      "line": "40",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "cheio_id",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@buffer",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "buffer",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "buffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@index_i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "index_i",
+    "location": {
+      "column": "13",
+      "line": "43",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "index_i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@count",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "count",
+    "location": {
+      "column": "26",
+      "line": "43",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "count",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@buttonDebounceTime",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "buttonDebounceTime",
+    "location": {
+      "column": "15",
+      "line": "45",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "buttonDebounceTime",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIOJ_Handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void GPIOJ_Handler(void)",
+    "location": {
+      "column": "6",
+      "line": "47",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "GPIOJ_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@consumidor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void consumidor(void *)",
+    "location": {
+      "column": "6",
+      "line": "68",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "consumidor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:prodcons.c@2245@F@consumidor@index_o",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "index_o",
+    "location": {
+      "column": "11",
+      "line": "69",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "index_o",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:prodcons.c@2245@F@consumidor@state",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "state",
+    "location": {
+      "column": "24",
+      "line": "69",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "state",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void main(void)",
+    "location": {
+      "column": "6",
+      "line": "90",
+      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:cmsis_os2.h@1841@macro@CMSIS_OS2_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -32143,188 +32339,6 @@
     },
     "name": "osRtxConfig",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:prodcons.c@1548@macro@BUFFER_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUFFER_SIZE",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "BUFFER_SIZE",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@produtor_id",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "produtor_id",
-    "location": {
-      "column": "14",
-      "line": "43",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "produtor_id",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@consumidor_id",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "consumidor_id",
-    "location": {
-      "column": "27",
-      "line": "43",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "consumidor_id",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@vazio_id",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "vazio_id",
-    "location": {
-      "column": "17",
-      "line": "44",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "vazio_id",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@cheio_id",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "cheio_id",
-    "location": {
-      "column": "27",
-      "line": "44",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "cheio_id",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@buffer",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "buffer",
-    "location": {
-      "column": "9",
-      "line": "45",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "buffer",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@index_i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "index_i",
-    "location": {
-      "column": "13",
-      "line": "47",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "index_i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@count",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "count",
-    "location": {
-      "column": "26",
-      "line": "47",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "count",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIOJ_Handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIOJ_Handler(void)",
-    "location": {
-      "column": "6",
-      "line": "50",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "GPIOJ_Handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@consumidor",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void consumidor(void *)",
-    "location": {
-      "column": "6",
-      "line": "89",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "consumidor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:prodcons.c@2793@F@consumidor@index_o",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "index_o",
-    "location": {
-      "column": "11",
-      "line": "90",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "index_o",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:prodcons.c@2793@F@consumidor@state",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "state",
-    "location": {
-      "column": "24",
-      "line": "90",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "state",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void main(void)",
-    "location": {
-      "column": "6",
-      "line": "114",
-      "path": "F:\\00_Embedded_Systems\\ES_UTFPR\\Projects\\RTOS\\prodcons\\src\\prodcons.c"
-    },
-    "name": "main",
-    "origin": "project_file",
     "scope": null
   },
   {

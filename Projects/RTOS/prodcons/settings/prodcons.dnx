@@ -16,7 +16,7 @@
         <LMIFTDIfoundProbes />
     </LMIFTDIDriver>
     <DebugChecksum>
-        <Checksum>2607720720</Checksum>
+        <Checksum>2215886962</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -47,16 +47,12 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints>
-        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\src\prodcons.c}.123.1" 1 0 0 0 "" 0 ""</Bp0>
-        <Bp1>_ "STD_CODE" "{$PROJ_DIR$\src\prodcons.c}.123.3" 1 0 0 0 "" 0 ""</Bp1>
-        <Bp2>_ "STD_CODE" "{$PROJ_DIR$\src\prodcons.c}.129.3" 1 0 0 0 "" 0 ""</Bp2>
-        <Bp3>_ "STD_CODE" "{$PROJ_DIR$\src\prodcons.c}.133.6" 1 0 0 0 "" 0 ""</Bp3>
-        <Bp4>_ "STD_CODE" "{$PROJ_DIR$\src\prodcons.c}.134.5" 1 0 0 0 "" 0 ""</Bp4>
-        <Count>5</Count>
+        <Count>0</Count>
     </Breakpoints>
     <Aliases>
         <A0>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\gpio.c" "F:\00_Embedded_Systems\ES_UTFPR\TivaWare_C_Series-2.1.4.178\third_party\FreeRTOS\Demo\CORTEX_LM3S811_IAR\LuminaryCode\gpio.c"</A0>
-        <Count>1</Count>
+        <A1>_ "C:\Jenkins\workspace\TivaWare-Git-Release\DriverLib\build\DriverLib.test\driverlib\interrupt.c" "F:\00_Embedded_Systems\ES_UTFPR\TivaWare_C_Series-2.1.4.178\third_party\FreeRTOS\Demo\CORTEX_LM3S811_IAR\LuminaryCode\interrupt.c"</A1>
+        <Count>2</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
 </settings>

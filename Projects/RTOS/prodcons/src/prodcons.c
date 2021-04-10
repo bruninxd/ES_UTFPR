@@ -4,9 +4,6 @@
 //****** Aluno: Bruno Soares de Souza 1558781                   ******\\
 // Prática 5:
 
-
-// Estou tendo problemas com o handler, vamos ver na aula
-
 //Exercício 5:
 //  
 //  Tp = 500 ms e Tc = 1s
@@ -22,7 +19,7 @@
 //  tp = 500 ms, tc = 500 ms
 //      LEDs mudam a cada meio segundo, cada item produzido é logo em seguida consumido
 
-// No geral nota-se a dependência entre os dois, para a garantia da exclusão mútua.
+// No geral nota-se a dependência entre os dois, para a garantia da exclusB9Dão mútua.
 
 // 3)
 // Não há impacto entre duas tarefas, pois uma produz e a outra consome, e há exclusão mútua
@@ -37,7 +34,6 @@
 #include "driverbuttons.h" // Projects/drivers
 #include "driverleds.h"
 
-
 #define BUFFER_SIZE 8
 
 osThreadId_t produtor_id, consumidor_id;
@@ -46,11 +42,12 @@ uint8_t buffer[BUFFER_SIZE];
 
     uint8_t index_i = 0, count = 0;
 
+    const int buttonDebounceTime = 300;
 
 void GPIOJ_Handler(void)
 {
-  
-//    uint8_t index_i = 0, count = 0;
+  ButtonIntDisable(USW1);
+//  ButtonIntClear(USW1);  poderia ser aqui
 
     osSemaphoreAcquire(vazio_id, 0); //ISR, não pode travar o sistema
     buffer[index_i] = count; // coloca no buffer
@@ -65,34 +62,13 @@ void GPIOJ_Handler(void)
     count++;
     count &= 0x0F; // produz nova informação
 
-//  Evento = Botao;
 } // GPIOJ_Handler
 
-//void produtor(void *arg){
-//  uint8_t index_i = 0, count = 0;
-//  
-//  while(1){
-//    osSemaphoreAcquire(vazio_id, osWaitForever); // há espaço disponível?
-//    buffer[index_i] = count; // coloca no buffer
-//    osSemaphoreRelease(cheio_id); // sinaliza um espaço a menos
-//    
-//    index_i++; // incrementa índice de colocação no buffer
-//    if(index_i >= BUFFER_SIZE)
-//      index_i = 0;
-//    
-//    count++;
-//    count &= 0x0F; // produz nova informação
-//    osDelay(500);
-//  } // while
-//} // produtor
 
 void consumidor(void *arg){
   uint8_t index_o = 0, state;
   
   while(1){
-    
-    
-        ButtonIntEnable(USW1);
     
     osSemaphoreAcquire(cheio_id, osWaitForever); // há dado disponível?
     state = buffer[index_o]; // retira do buffer
@@ -103,12 +79,12 @@ void consumidor(void *arg){
       index_o = 0;
     
     LEDWrite(LED4 | LED3 | LED2 | LED1, state); // apresenta informação consumida
-    osDelay(500);
-    
-    //libera GPIO
-  ButtonIntEnable(USW1);
 
-  } // while
+    osDelay(buttonDebounceTime);
+    ButtonIntClear(USW1);
+    ButtonIntEnable(USW1);
+    
+    } // while
 } // consumidor
 
 void main(void){
@@ -117,15 +93,13 @@ void main(void){
   
   //botao
   ButtonInit(USW1);
-
-
+  ButtonIntEnable(USW1);
 
   osKernelInitialize();
 
-  //produtor_id = osThreadNew(produtor, NULL, NULL);
   consumidor_id = osThreadNew(consumidor, NULL, NULL);
 
-  vazio_id = osSemaphoreNew(BUFFER_SIZE, BUFFER_SIZE, NULL); // espaços disponíveis = BUFFER_SIZE
+  vazio_id = osSemaphoreNew(BUFFER_SIZE, BUFFER_SIZE, NULL); // espaços disponíB9Dveis = BUFFER_SIZE
   cheio_id = osSemaphoreNew(BUFFER_SIZE, 0, NULL); // espaços ocupados = 0
   
 

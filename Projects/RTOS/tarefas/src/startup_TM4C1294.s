@@ -34,7 +34,7 @@
 ; When debugging in RAM, it can be located in RAM, aligned to at least 2^6.
 ; The name "__vector_table" has special meaning for C-SPY:
 ; it is where the SP start value is found, and the NVIC vector
-; table register (VTOR) is initialized to this address if != 0.
+; table register (VTOB9DR) is initialized to this address if != 0.
 ;
 ; Cortex-M version
 ;
