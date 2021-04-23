@@ -5,183 +5,72 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.o</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_iccarm.h</file>
-            <file>$PROJ_DIR$\ewarm\Exe\prodcons.bin</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\..\..\drivers\driverleds.h</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_version.h</file>
-            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h</file>
             <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\rtx_os.h</file>
-            <file>$PROJ_DIR$\src\TM4C1294NCPDT.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.xcl</file>
-            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverleds.xcl</file>
-            <file>$PROJ_DIR$\..\drivers\driverleds.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.xcl</file>
-            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.o</file>
-            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\inc\hw_ints.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.xcl</file>
-            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.__cstat.et</file>
-            <file>$PROJ_DIR$\ewarm\Obj\prodcons.__cstat.et</file>
-            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.o</file>
-            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.__cstat.et</file>
-            <file>$PROJ_DIR$\ewarm\Obj\prodcons.pbd</file>
-            <file>$PROJ_DIR$\src\RTX_Config.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.xcl</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.o</file>
-            <file>$PROJ_DIR$\..\..\fsm_matrix\src\fsm_matrix.c</file>
-            <file>$PROJ_DIR$\..\..\drivers\driverbuttons.h</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_compiler.h</file>
-            <file>$PROJ_DIR$\ewarm\Obj\prodcons.o</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\core_cm4.h</file>
-            <file>$PROJ_DIR$\..\..\Aula3_FSM\fsm_state\src\fsm_state.c</file>
-            <file>$PROJ_DIR$\ewarm\Exe\prodcons.out</file>
-            <file>$PROJ_DIR$\..\tarefas\src\RTX_Config.h</file>
-            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C1294NC.icf</file>
-            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_version.h</file>
+            <file>$PROJ_DIR$\src\prodcons.c</file>
+            <file>$PROJ_DIR$\src\rtx_lib.c</file>
             <file>$PROJ_DIR$\src\system_TM4C1294_TW.c</file>
-            <file>$PROJ_DIR$\..\..\drivers\driverbuttons.c</file>
-            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Library\IAR\RTX_CM4F.a</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverleds.xcl</file>
             <file>$PROJ_DIR$\..\..\Aula1\driverlib\ewarm\Exe\driverlib.a</file>
             <file>$PROJ_DIR$\src\RTX_Config.c</file>
-            <file>$PROJ_DIR$\src\startup_TM4C1294.s</file>
-            <file>$PROJ_DIR$\ewarm\Obj\driverleds.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\src\prodcons.c</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Library\IAR\RTX_CM4F.a</file>
+            <file>$PROJ_DIR$\..\..\drivers\driverleds.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\..\..\drivers\driverbuttons.c</file>
+            <file>$PROJ_DIR$\ewarm\Exe\prodcons.bin</file>
+            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.o</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\RTX\Include\rtx_evr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\driverlib\interrupt.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\RTOS2\Include\cmsis_os2.h</file>
             <file>$PROJ_DIR$\..\drivers\driverleds.c</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\src\TM4C1294NCPDT.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.xcl</file>
+            <file>$PROJ_DIR$\src\startup_TM4C1294.s</file>
+            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\inc\hw_memmap.h</file>
             <file>$PROJ_DIR$\ewarm\Obj\prodcons.xcl</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\ewarm\Obj\startup_TM4C1294.o</file>
             <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$PROJ_DIR$\src\system_TM4C1294.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\src\system_TM4C1294.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\startup_TM4C1294.o</file>
             <file>$PROJ_DIR$\ewarm\Obj\driverleds.__cstat.et</file>
-            <file>$PROJ_DIR$\src\rtx_lib.c</file>
-            <file>$PROJ_DIR$\ewarm\List\prodcons.map</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\..\tarefas\src\startup_TM4C1294.s</file>
-            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\third_party\FreeRTOS\Demo\CORTEX_LM3S811_IAR\LuminaryCode\gpio.c</file>
+            <file>$PROJ_DIR$\ewarm\List\prodcons.map</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\core_cm4.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\prodcons.o</file>
+            <file>$PROJ_DIR$\src\RTX_Config.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.__cstat.et</file>
+            <file>$PROJ_DIR$\ewarm\Obj\prodcons.pbd</file>
+            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.__cstat.et</file>
+            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\inc\hw_ints.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\prodcons.__cstat.et</file>
+            <file>$PROJ_DIR$\..\drivers\driverleds.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.o</file>
+            <file>$PROJ_DIR$\ewarm\Obj\system_TM4C1294_TW.xcl</file>
+            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.__cstat.et</file>
+            <file>$PROJ_DIR$\ewarm\Obj\RTX_Config.xcl</file>
+            <file>$PROJ_DIR$\..\..\..\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h</file>
+            <file>$PROJ_DIR$\..\..\..\CMSIS-5.6.0\CMSIS\Core\Include\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\rtx_lib.o</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C1294NC.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverbuttons.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\..\..\drivers\driverbuttons.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\ewarm\Exe\prodcons.out</file>
+            <file>$PROJ_DIR$\ewarm\Obj\driverleds.o</file>
         </outputs>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 41 66</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\ewarm\Exe\prodcons.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 66</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 2</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 44 34 52 49 38 48 0 19 58 26 57 63 22 32</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\system_TM4C1294_TW.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 29</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 18</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 7 53 5 67 28 3 13 39 10 37 1 45 61 62 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\..\drivers\driverbuttons.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 6</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 23</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 62 7 53 5 67 28 3 15 20 59 43 11 36</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\RTX_Config.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 0</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 24</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 33</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37 7 53 5 67 28 3 1 45 12 60 21 9</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\src\startup_TM4C1294.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 58</file>
-                </tool>
-            </outputs>
-        </file>
         <file>
             <name>$PROJ_DIR$\src\prodcons.c</name>
             <outputs>
@@ -190,41 +79,18 @@
                     <file> 38</file>
                 </tool>
                 <tool>
-                    <name>__cstat</name>
-                    <file> 25</file>
+                    <name>BICOMP</name>
+                    <file> 26</file>
                 </tool>
                 <tool>
-                    <name>BICOMP</name>
-                    <file> 56</file>
+                    <name>__cstat</name>
+                    <file> 47</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 61 7 53 5 67 28 3 8 9 60 21 36</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\drivers\driverleds.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 52</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 64</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 16</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 62 7 53 5 67 28 3 15 59 43 17</file>
+                    <file> 29 11 40 16 32 59 18 10 19 35 62 61</file>
                 </tool>
             </inputs>
         </file>
@@ -233,21 +99,150 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 19</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 27</file>
+                    <file> 55</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 14</file>
+                    <file> 23</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 45</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 37 7 53 5 67 28 3 1 45 31 12 60 21 9 4</file>
+                    <file> 54 11 40 16 32 59 18 21 57 39 0 35 62 19 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\system_TM4C1294_TW.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 43</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 50</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 40 16 32 59 18 22 37 1 54 21 57 29 28 27</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\RTX_Config.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 52</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54 11 40 16 32 59 18 21 57 0 35 62 19</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\drivers\driverbuttons.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 49</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28 11 40 16 32 59 18 25 46 27 53 17 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\drivers\driverleds.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 64</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 31</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28 11 40 16 32 59 18 25 27 53 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup_TM4C1294.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 63 33</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ewarm\Exe\prodcons.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 33</file>
+                </tool>
+                <tool>
+                    <name>OBJCOPY</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 56 49 64 6 38 9 14 55 30 43 36 34 60 44</file>
                 </tool>
             </inputs>
         </file>
